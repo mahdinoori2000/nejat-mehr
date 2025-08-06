@@ -1,0 +1,92 @@
+/* Webfont: Yekan */
+@font-face {
+  font-family: "Yekan";
+  src: url("Yekan.eot"); /* IE9 Compat Modes */
+  src: url("Yekan.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("Yekan.woff2") format("woff2"),
+    /* Modern Browsers */ url("Yekan.woff") format("woff"),
+    /* Modern Browsers */ url("Yekan.otf") format("opentype"),
+    /* Open Type Font */ url("Yekan.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+.news-section {
+  background-color: var(--clr-white);
+  padding: 2em;
+  font-family: "Yekan";
+  src: url("Yekan.eot"); /* IE9 Compat Modes */
+  src: url("Yekan.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("Yekan.woff2") format("woff2"),
+    /* Modern Browsers */ url("Yekan.woff") format("woff"),
+    /* Modern Browsers */ url("Yekan.otf") format("opentype"),
+    /* Open Type Font */ url("Yekan.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+.news-container {
+  margin: auto;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  background-color: var(--clr-grey-9);
+  padding: 1.3em;
+}
+
+.news-container a {
+  margin-bottom: 2.5em;
+}
+
+.image-div {
+  text-align: center;
+}
+
+.image-div img {
+  width: 100%;
+}
+
+h3,
+p {
+  margin-bottom: 0.3rem !important;
+}
+
+.news-title {
+  font-size: 1.5rem;
+}
+
+.news-date {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.news-cta {
+  margin: 0 auto 0.8rem;
+}
+
+.news-cta a {
+  margin-bottom: 0.6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .news-container a {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  .image-div img {
+    height: 130px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .news-container {
+    padding: 2em;
+  }
+}

@@ -1,0 +1,32 @@
+.messageTwo-section {
+  background-color: var(--clr-white);
+  padding: 2em;
+}
+
+.messageTwo-container {
+  margin: auto;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .messageTwo-section {
+    padding: 4em 2em;
+  }
+
+  .messageTwo-container {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+
+  .name-pos {
+    min-width: 380px;
+    text-align: right;
+  }
+
+  .message {
+    max-width: 730px;
+  }
+}
