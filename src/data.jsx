@@ -102,6 +102,11 @@ export const links = [
   },
   {
     id: 5,
+    url: "/projects",
+    text: "projects",
+  },
+  {
+    id: 6,
     url: "/gallery",
     text: "gallery",
   },
@@ -259,5 +264,33 @@ export const galleryImages = [
   {
     id: 6,
     path: "/imgs/gallery6.jpeg",
+  },
+];
+
+export const galleryImages2 = [
+  {
+    id: 1,
+    path: "/assets/img/gallery/9.jpg",
+  },
+  {
+    id: 2,
+    path: "/assets/img/gallery/10.jpg",
+  },
+  {
+    id: 3,
+    path: "/assets/img/gallery/11.jpg",
+  },
+  {
+    id: 4,
+    path: "/assets/img/gallery/12.jpg",
+  },
+
+  {
+    id: 5,
+    path: "/assets/img/gallery/13.jpg",
+  },
+  {
+    id: 6,
+    path: "/assets/img/gallery/14.jpg",
   },
 ];

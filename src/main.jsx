@@ -6,7 +6,8 @@ import "./index.css";
 import Notfound from "./pages/404/NotFound";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
-import Gallery from "./pages/gallery/Gallery";
+import Projects from "./pages/projects/Projects";
+import Photos from "./pages/gallery/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,13 @@ const router = createBrowserRouter([
     errorElement: <Notfound />,
   },
   {
+    path: "/projects",
+    element: <Projects />,
+    errorElement: <Notfound />,
+  },
+  {
     path: "/gallery",
-    element: <Gallery />,
+    element: <Photos />,
     errorElement: <Notfound />,
   },
 ]);
