@@ -13,7 +13,7 @@ export default function Footer() {
             <h4>CONTACT US</h4>
             <ul>
               <li>
-                <a href="tel:+93781407040">+93 (0) 781407040</a>
+                <a href="tel:+93729599599">+93 (0) 729599599</a>
               </li>
               <li>
                 <a href="mailto:info@nejatmehr.com">info@nejatmehr.com</a>
