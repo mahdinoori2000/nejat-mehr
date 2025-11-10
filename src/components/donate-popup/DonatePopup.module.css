@@ -1,0 +1,107 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 20px; /* adds breathing space on small screens */
+}
+
+.popup {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  max-height: 90vh; /* limit popup height */
+  overflow-y: auto; /* enable scrolling if content overflows */
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+/* custom scrollbar for WebKit browsers */
+.popup::-webkit-scrollbar {
+  width: 6px;
+}
+.popup::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s ease;
+}
+.closeBtn:hover {
+  color: #000;
+}
+
+h2 {
+  color: #e63946;
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+.bankInfo {
+  background: #f8f9fa;
+  padding: 14px;
+  border-radius: 10px;
+  margin: 15px 0;
+  text-align: left;
+  border-left: 4px solid #457b9d;
+}
+
+.bankInfo h4 {
+  color: #1d3557;
+  margin-bottom: 6px;
+}
+
+.bankInfo p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.note {
+  font-size: 14px;
+  color: #333;
+  background: #fff3cd;
+  border-left: 4px solid #ffb703;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.thanks {
+  text-align: center;
+  font-weight: 600;
+  color: #1d3557;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

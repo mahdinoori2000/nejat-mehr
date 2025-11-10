@@ -1,10 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { footerInfo, footerServices } from "../data";
 import logo from "/imgs/logo2.png";
 import "./css/footer.css";
+import DonatePopup from "./donate-popup/DonatePopup";
+import { useState } from "react";
 
 export default function Footer() {
+const [showDonate, setShowDonate] = useState(false);
+
   return (
     <footer>
       <section className="footer-section">
@@ -13,7 +16,8 @@ export default function Footer() {
             <h4>CONTACT US</h4>
             <ul>
               <li>
-                <a href="tel:+93781407040">+93 (0) 781407040</a>
+                <a href="tel:+93729599599">+93 (0) 729599599</a>
+                <a href="tel:+93780690909">+93 (0) 780690909</a>
               </li>
               <li>
                 <a href="mailto:info@nejatmehr.com">info@nejatmehr.com</a>
@@ -48,9 +52,12 @@ export default function Footer() {
           </div>
           <div className="cta-col">
             <h4>HELP DESERVING PEOPLE</h4>
-            <Link to="/contact" className="cta-btn">
-              DONATE
-            </Link>
+       
+             <>
+      <button className="cta-btn" onClick={() => setShowDonate(true)}>Donate Now</button>
+
+      <DonatePopup show={showDonate} onClose={() => setShowDonate(false)} />
+    </>
           </div>
         </div>
       </section>

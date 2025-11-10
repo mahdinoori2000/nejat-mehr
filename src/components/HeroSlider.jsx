@@ -1,11 +1,12 @@
-import React from "react";
 import { Slide } from "react-slideshow-image";
 import { slideImages } from "../data";
 import "react-slideshow-image/dist/styles.css";
 import "../pages/landingPage/main.css";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import DonatePopup from "./donate-popup/DonatePopup";
 
 export default function () {
+  const [showDonate, setShowDonate] = useState(false);
   return (
     <>
       <div className="slide-container">
@@ -23,9 +24,13 @@ export default function () {
         </Slide>
         <div className="hero-elements">
           <h1 className="hero-title">Help Victims with our cooperation</h1>
-          <Link className="hero-cta-button" to="/contact">
-            DONATE
-          </Link>
+          
+             <>
+      <button className="hero-cta-button" onClick={() => setShowDonate(true)}>Donate Now</button>
+
+      <DonatePopup show={showDonate} onClose={() => setShowDonate(false)} />
+    </>
+       
         </div>
       </div>
     </>
