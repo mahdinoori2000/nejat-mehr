@@ -7,15 +7,15 @@ import { BsGraphUp } from "react-icons/bs";
 export const teamMembers = [
   {
     id: 1,
-    name: "Mohammad Latif Safi",
+    name: "Basir Ahmad Karimi",
     position: "Managing Director",
-    image: "/imgs/latifsafi.jpg",
+    image: "/imgs/basir-ahmad-karimi.jpg",
   },
   {
     id: 2,
-    name: "Sayed Munir Ahmad",
+    name: "Sayed Mukhlis Sadat",
     position: "Deputy Director",
-    image: "/imgs/munirahmad.jpg",
+    image: "/imgs/sayed-mukhlis-sadat.jpg",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const teamMembers = [
     id: 4,
     name: "Sayed Nasir Ahmad Emad",
     position: "Chairman Of The Board",
-    image: "/imgs/nasirahmad.jpg",
+    image: "/imgs/s-naseer-emad.jpg",
   },
   {
     id: 5,
@@ -92,21 +92,16 @@ export const links = [
   },
   {
     id: 3,
-    url: "/projects",
-    text: "projects",
-  },
-  {
-    id: 4,
     url: "/contact",
     text: "contact",
   },
   {
-    id: 5,
+    id: 4,
     url: "/projects",
     text: "projects",
   },
   {
-    id: 6,
+    id: 5,
     url: "/gallery",
     text: "gallery",
   },
